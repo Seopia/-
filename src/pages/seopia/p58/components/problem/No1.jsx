@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import InputDate from '../InputDate';
+import s from './No1.module.css';
 
 function No1({setSuccess}) {
     const today = new Date();
@@ -31,8 +32,8 @@ function No1({setSuccess}) {
         collect.year&&collect.month&&collect.date&&result1.날씨&&setSuccess(true);
     },[collect])
     return (
-        <div>
-            <div>오늘의 날짜를 적고, 날씨에 동그라미 하세요.</div>
+        <div className={s.container}>
+            <div className={s.pr}>1. 오늘의 날짜를 적고, 날씨를 입력하세요.</div>
             <div style={{display:'flex'}}>
                 <InputDate text="년" set={handleResult1} collect={collect.year}/>
                 <InputDate text="월" set={handleResult1} collect={collect.month}/>

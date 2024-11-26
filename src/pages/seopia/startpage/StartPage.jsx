@@ -11,7 +11,7 @@ function StartPage() {
   const [account, setAccount] = useState({id: '',pw: '',}); 
   const login = () => {
     if(account.id==='user'&&account.pw==='user'){
-      nav('/problem-1');
+      nav('/p58');
       setStartQuiz(true);
     } else {
       return;

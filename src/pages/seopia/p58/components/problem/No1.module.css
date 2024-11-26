@@ -1,0 +1,16 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.pr{
+    font-size: 18px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    background-color: #A78C7B;
+    padding: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+    border-radius: 10px;
+}
