@@ -1,0 +1,24 @@
+.title{
+    background-color:rgb(220, 255, 96);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-radius: 7px;
+}
+.tableContainer{
+    padding: 10px;
+    
+}
+.table{
+    text-align: center;
+    border-collapse: collapse;
+}
+.table tbody th{
+    background: rgb(255, 247, 236);
+    padding: 20px 10px 20px 10px;
+}
+.tableTitle th{
+    background: aquamarine;
+    padding: 5px 5px;
+}
