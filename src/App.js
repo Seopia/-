@@ -3,7 +3,7 @@ import StartPage from './pages/seopia/startpage/StartPage';
 import Header from './pages/seopia/header/Header';
 import Problem1 from './pages/seopia/problem1/Problem1';
 import Problem2 from './pages/seopia/problem2/Problem2';
-
+//lklk
 function App() {
   return (
     <BrowserRouter>
