@@ -1,0 +1,36 @@
+.main_body{
+    width: 500px;
+    border: 1px solid #000;
+    margin: 0 auto;
+    padding: 0 30px 0 30px;
+    height: 100%;
+}
+
+.text_style{
+
+}
+
+.ex{
+    color:red;
+}
+
+.pic_img{
+    border:1px solid #000;
+
+}
+
+.question_num{
+
+}
+
+.answer{
+width: 90%;
+margin: 10px 0 10px 10px;
+border-width:0 0 1px;
+}
+
+.page_button{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0 30px 0;
+}
