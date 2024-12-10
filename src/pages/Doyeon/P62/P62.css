@@ -1,0 +1,61 @@
+.main_body {
+  width: 500px;
+  height: 750px;
+}
+
+.ex_box {
+  width: 100%;
+  border: 1px solid #000;
+  border-radius: 1em;
+}
+
+.ex_detail {
+  height: 100%;
+  padding: 10px 10px 10px 10px;
+  border-bottom: 1px solid #000;
+}
+
+.ex_detail2 {
+  height: 100%;
+  padding: 10px 10px 10px 10px;
+}
+.no1 {
+  margin: 30px 0 30px 0;
+}
+.no1_table {
+  margin-top: 10px;
+  border-collapse: collapse;
+}
+
+.no1_answer {
+  width: 118px;
+  border-width: 0 0;
+  background-color: transparent;
+}
+
+.no2 {
+  margin: 30px 0 30px 0;
+}
+.no2_input {
+  text-align: right;
+}
+.no2_answer {
+  background-color: transparent;
+  margin-top: 10px;
+  width: 100px;
+  border-width: 0 0 1px;
+  margin: 0 5px 0 5px;
+}
+
+.page_button {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0 30px 0;
+}
+
+.remember1 {
+  text-decoration: underline;
+}
+.red_text {
+  color: red;
+}
