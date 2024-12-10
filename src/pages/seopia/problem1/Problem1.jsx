@@ -7,7 +7,7 @@ function Problem1() {
     const {score,setScore} = useOutletContext();
     const [success, setSuccess] = useState(false);
     const next = () => {
-        nav('/problem-2');
+        nav('/P59');
         setScore(score+2);
     }
     return (
