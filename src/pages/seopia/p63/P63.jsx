@@ -43,7 +43,7 @@ function P63() {
                     )
                 })
             }
-            <NextButton goTo={'/result'} callBack={()=>{
+            <NextButton goTo={'/P61'} callBack={()=>{
                 const countCollect = imgs.filter(item => item.isCollect).length;
                 setScore(score+countCollect);
             }}/>

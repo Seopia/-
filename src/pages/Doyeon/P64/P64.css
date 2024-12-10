@@ -1,0 +1,99 @@
+.main_body {
+  width: 500px;
+  height: 750px;
+  margin-top: 110px;
+
+}
+/* #FEBE98, #FFEDD5 */
+.diary {
+  width: 100px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  color: white;
+  border-radius: 1em;
+  background-color: rgb(255, 190, 152);
+  margin-top: 7px;
+}
+.main_date {
+  margin: 5px 0 10px 0;
+}
+.date_input {
+  border-width: 0 0 1px;
+  width: 50px;
+  text-align: right;
+  margin-left: 5px;
+  background-color: transparent;
+
+}
+.weather {
+  margin-left: 10px;
+}
+.circle {
+  border-radius: 50%;
+  border: 1px solid rgb(255, 190, 152);
+}
+.weather_icon {
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  margin-left: 5px;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+.weather_icon.selected {
+  border-color: red;
+}
+
+.table_size1 {
+  width: 100%;
+}
+.table_size2 {
+  width: 100%;
+  margin: 7px 0 7px 0;
+}
+.table_textArea {
+  width: 95%;
+  height: 50px;
+  border-width: 0 0;
+  background-color: transparent;
+}
+
+.table1_1 {
+  text-align: center;
+  width: 17%;
+}
+.table1_3 {
+  text-align: center;
+  width: 17%;
+}
+
+.table2_2 {
+  width: 20%;
+  text-align: center;
+}
+
+.table3_1 {
+  width: 17%;
+  text-align: center;
+}
+
+.table4_1 {
+  width: 17%;
+  text-align: center;
+}
+
+.page_button {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0 20px 0;
+}
+.null_text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color:red;
+}
