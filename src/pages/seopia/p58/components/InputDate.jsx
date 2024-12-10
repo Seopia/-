@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function InputDate({text,set, collect}) {
+function InputDate({text,set, collect }) {
     const [isCollect, setIsCollect] = useState(collect);
     return (
         <div>

@@ -6,8 +6,10 @@ function Result() {
     const nav = useNavigate();
     return (
         <div className={s.container}>
-            <div>점수는 : <b>{score}점</b> (CSS 해야해..)</div>
-            <button onClick={()=>{nav('/')}}>돌아가기</button>
+            <div className={s.resultContainer}>
+                <div>🎉 점수는 : <b>{score}점 🎉</b></div>
+                <button onClick={()=>{nav('/')}}>돌아가기</button>
+            </div>
         </div>
     );
 }

@@ -1,0 +1,21 @@
+
+.prob{
+    margin-bottom:30px;
+}
+.prob b{
+    color: rgb(201, 7, 7);
+}
+.input{
+    background-color: #FEBE98;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: inset 1px 1px 4px 1px #c89578;
+    transition: scale 0.2s ease;
+}
+.input:focus{
+    outline: none;
+    scale: 1.04;
+}

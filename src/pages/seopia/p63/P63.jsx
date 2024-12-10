@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
 import NextButton from '../../components/NextButton';
 import { useOutletContext } from 'react-router-dom';
-
+import s from './P63.module.css';
+/*
+*
+*/
 function P63() {
     const {score,setScore} = useOutletContext();
     let imageArr = [];
@@ -23,7 +26,8 @@ function P63() {
         )
     }
     return (
-        <div style={{display:'flex',height:'100vh',marginTop:'35%'}}>
+        <div style={{display:'flex',height:'100vh',marginTop:'25%', flexDirection:'column'}}>
+            <div className={s.prob}>2. 앞서 기억해 둔 <b>복지관의 층별 시설</b>과 시설을 대표하는 그림을 알맞게 연결해보세요.</div>
             {imgs?
             <div>
             {
@@ -31,9 +35,10 @@ function P63() {
                     
                     return(
                         <div style={{display:'flex',alignItems:'center'}} key={k}>
-                            <img style={{marginBottom:20}} width={200} src={img.url}/>
-                            <input type='number' value={img.input} onChange={(e)=>handleImgInputChange(e,img.number)}/>
-                            <div>{img.url}층</div>
+                            <img style={{marginBottom:20, borderRadius:10}} width={200} src={img.url}/>
+                            <input className={s.input} type='number' value={img.input} onChange={(e)=>handleImgInputChange(e,img.number)}/>
+                            {/* <div>{img.url}층</div> */}
+                            <div>층</div>
                         </div>
                     )
                 })

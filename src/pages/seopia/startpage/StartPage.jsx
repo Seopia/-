@@ -30,7 +30,7 @@ function StartPage() {
             onKeyDown={(k)=>k.code==='Enter'&&login()} 
             onChange={(e)=>handleAccountChange(e,'pw')}
           />
-          <button onClick={login}>Login</button>
+          <button onClick={login}>Quiz Start</button>
         </div>
     </div>
   )
