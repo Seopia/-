@@ -4,20 +4,20 @@ import "./P60.css";
 
 function P60() {
   const nav = useNavigate();
-  const { score, setScore } = useOutletContext(); // 점수 관리 상태
+  const { score, setScore } = useOutletContext(); 
 
-  // 사용자 입력 상태
+  
   const [inputs, setInputs] = useState({ Q1: ["", "", "", "", ""], Q2: ["", "", "", "", ""], Q3: ["", ""] });
   const [inputScored, setInputScored] = useState({ Q1: false, Q2: false, Q3: false });
 
-  // 정답 데이터
+
   const correctAnswers = {
     Q1: ["28", "37", "11", "45", "8"].sort(),
     Q2: ["지아", "서준", "가은", "서연", "시우"].sort(),
     Q3: ["가은", "서연"].sort(),
   };
 
-  // 입력값 관리 및 점수 업데이트 함수
+  
   const handleInputChange = (value, key, index) => {
     setInputs((prev) => {
       const newValues = [...prev[key]];
@@ -26,7 +26,7 @@ function P60() {
     });
   };
 
-  // 입력값 확인 및 점수 업데이트
+  
   useEffect(() => {
     Object.keys(correctAnswers).forEach((key) => {
       if (!inputScored[key] && inputs[key].every((val) => val.trim() !== "")) {

@@ -4,7 +4,7 @@ import "./P59.css";
 
 function P59() {
   const nav = useNavigate();
-  const { score, setScore } = useOutletContext(); // 점수 관리 상태
+  const { score, setScore } = useOutletContext(); 
   const [inputs, setInputs] = useState({
     "5층": { facility: "", description: "" },
     "4층": { facility: "", description: "" },
@@ -30,7 +30,7 @@ function P59() {
       },
     }));
 
-    // 즉시 점수 업데이트
+    
     const correct = correctAnswers[floor];
     const userInputs = {
       ...inputs[floor],
