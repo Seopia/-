@@ -26,7 +26,7 @@ function P63() {
         )
     }
     return (
-        <div style={{display:'flex',height:'100vh',marginTop:'25%', flexDirection:'column'}}>
+        <div style={{display:'flex',height:'100vh',marginTop:'10%', flexDirection:'column'}}>
             <div className={s.prob}>2. 앞서 기억해 둔 <b>복지관의 층별 시설</b>과 시설을 대표하는 그림을 알맞게 연결해보세요.</div>
             {imgs?
             <div>
@@ -43,7 +43,7 @@ function P63() {
                     )
                 })
             }
-            <NextButton goTo={'/P61'} callBack={()=>{
+            <NextButton goTo={'/P64'} callBack={()=>{
                 const countCollect = imgs.filter(item => item.isCollect).length;
                 setScore(score+countCollect);
             }}/>

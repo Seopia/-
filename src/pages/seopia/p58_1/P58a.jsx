@@ -3,7 +3,7 @@ import s from './P58a.module.css';
 import NextButton from '../../components/NextButton';
 function P58a() {
     return (
-        <div style={{height:'100vh',marginTop:'25%'}}>
+        <div style={{height:'100vh',marginTop:'10%'}}>
             <span className={s.title}>층별 시설 기억하기</span>
             <p>
                 다음은 노인 복지관의 층별 안내도 입니다.<br/>
@@ -48,7 +48,7 @@ function P58a() {
                 </table>
                 </div>
                 <div><u><b style={{color:'red'}}>복지관의 층별 시설</b>을 기억해 주세요.</u></div>
-                <NextButton goTo={'/p63'}/>
+                <NextButton goTo={'/p59'}/>
         </div>
     );
 }

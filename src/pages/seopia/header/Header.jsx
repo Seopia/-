@@ -48,7 +48,9 @@ function Header() {
                 :<></>}
             </div>
             {/* <div className={s.ghostHeader}></div> */}
+            <div className={s.buRoot}>
             <Outlet context={{setStartQuiz,score,setScore}}/>
+            </div>
         </>
     )
 }

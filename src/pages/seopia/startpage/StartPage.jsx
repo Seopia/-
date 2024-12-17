@@ -1,11 +1,12 @@
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import s from './Startpage.module.css';
 import { useLocation, useNavigate, useOutletContext } from 'react-router-dom';
 
 function StartPage() {
   const nav = useNavigate();
   const location = useLocation();
+  const { score, setScore } = useOutletContext();
   const {msg} = location.state || {};
   const {setStartQuiz} = useOutletContext();
   const [account, setAccount] = useState({id: '',pw: '',}); 
@@ -17,6 +18,9 @@ function StartPage() {
       return;
     }
   }
+  useEffect(()=>{
+    setScore(0);
+  },[])
   const handleAccountChange = (e,k) => {
     setAccount({...account,[k]:e.target.value});
   }

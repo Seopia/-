@@ -76,7 +76,7 @@ function P62(props) {
   }, [no2Answer, no2Score, correctNo2, setScore]);
 
   const nextPage = () => {
-    nav("/P64");
+    nav("/P63");
   };
 
   return (

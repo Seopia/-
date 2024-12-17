@@ -4,31 +4,18 @@ import "./P61.css";
 
 function P61() {
   const nav = useNavigate();
+  const { score, setScore } = useOutletContext();
 
-  const [imgs, setImgs] = useState([
-    { url: "/p61/p61_1.PNG", loaded: false },
-    { url: "/p61/p61_2.PNG", loaded: false },
-    { url: "/p61/p61_3.PNG", loaded: false },
-    { url: "/p61/p61_4.PNG", loaded: false },
-  ]);
+  const p61img = [
+    "/P61/p61_1.png",
+    "/P61/p61_2.png",
+    "/P61/p61_3.png",
+    "/P61/p61_4.png",
+  ];
 
   const [no1Answer, setNo1Answer] = useState({ Q1: "", Q2: "", Q3: "" });
   const [allInputMax, setAllInputMax] = useState(false);
-  const [no1Score, setNo1Score] = useState(false); 
-  const { score, setScore } = useOutletContext();
-
-  useEffect(() => {
-    imgs.forEach((img) => {
-      const image = new Image();
-      image.src = img.url;
-      image.onload = () =>
-        setImgs((prevImgs) =>
-          prevImgs.map((prevImg) =>
-            prevImg.url === img.url ? { ...prevImg, loaded: true } : prevImg
-          )
-        );
-    });
-  }, [imgs]);
+  const [no1Score, setNo1Score] = useState(false);
 
   useEffect(() => {
     const inputsFilled = Object.values(no1Answer).every(
@@ -38,7 +25,7 @@ function P61() {
 
     if (inputsFilled && !no1Score) {
       setScore((prevScore) => prevScore + 1);
-      setNo1Score(true); 
+      setNo1Score(true);
     }
   }, [no1Answer, no1Score, setScore]);
 
@@ -54,8 +41,8 @@ function P61() {
       </p>
 
       <div className="pic_set">
-        {imgs.map((img, index) => (
-          <img key={index} src={img.url} alt="" className="pic_img" />
+        {p61img.map((url, index) => (
+          <img key={index} src={url} alt="" className="pic_img" />
         ))}
       </div>
 
@@ -77,7 +64,7 @@ function P61() {
         </div>
       ))}
 
-<div className="next_page_div">
+      <div className="next_page_div">
         {allInputMax && (
           <span className="correct_text">모든 칸을 채우셨어요!</span>
         )}
@@ -86,7 +73,9 @@ function P61() {
         )}
         <button
           className="page_button"
-          onClick={()=>{nav('/P62')}}
+          onClick={() => {
+            nav("/p62");
+          }}
           type="button"
           disabled={!allInputMax}
         >

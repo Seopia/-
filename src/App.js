@@ -10,6 +10,8 @@ import P58a from './pages/seopia/p58_1/P58a';
 import P61 from './pages/Doyeon/P61/P61';
 import P62 from './pages/Doyeon/P62/P62';
 import P64 from './pages/Doyeon/P64/P64';
+import P59 from './pages/jeahee/P59/P59';
+import P60 from './pages/jeahee/P60/P60';
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
           <Route path='/' element={<StartPage/>}/>
           <Route path='/p58' element={<P58/>}/>
           <Route path='/p58a' element={<P58a/>}/>
+          <Route path="/p59" element={<P59/>}/>
+          <Route path="/p60" element={<P60/>}/>
           <Route path='/P61' element={<P61/>}/>
           <Route path='/P62' element={<P62/>}/>
           <Route path='/p63' element={<P63/>}/>

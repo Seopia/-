@@ -10,10 +10,10 @@ function P64(props) {
 
   const [weatherSelect, setWeatherSelect] = useState("");
   const [weatherIcons, setWeatherIcons] = useState([
-    { type: "sunny", url: "/p64/sunny.PNG", loaded: false },
-    { type: "cloudy", url: "/p64/cloudy.PNG", loaded: false },
-    { type: "rainy", url: "/p64/rainy.PNG", loaded: false },
-    { type: "windy", url: "/p64/windy.PNG", loaded: false },
+    { type: "sunny", url: "/P64/sunny.PNG", loaded: false },
+    { type: "cloudy", url: "/P64/cloudy.PNG", loaded: false },
+    { type: "rainy", url: "/P64/rainy.PNG", loaded: false },
+    { type: "windy", url: "/P64/windy.PNG", loaded: false },
   ]);
 
   const [inputs, setInputs] = useState({
@@ -95,7 +95,7 @@ function P64(props) {
 
   const nextPage = () => {
     if (allInputsFilled) {
-      nav("");
+      nav("/result");
     }
   };
 
